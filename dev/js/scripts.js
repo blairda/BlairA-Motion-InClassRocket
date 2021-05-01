@@ -19,8 +19,9 @@ mainTL.add(fadeInTL)
         .add(spaceShipTL)
         .add(liftOffTL)
         .add(flightTL ,"zoomFlight")
-        .addLabel("marker")
         .add(moonZoomInTL,"zoomFlight")
+        // beginning of my animation - after landingTL
+        .addLabel("marker")
         .add(landingTL)
         .add(moonManTL);
 

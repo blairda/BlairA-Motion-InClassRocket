@@ -2,16 +2,12 @@ import { gsap } from "gsap";
 
 gsap.set("#moon",{transformOrigin:"center"});
 
-// hide moon elements
-// gsap.set(".moon-things",{display:"none"});
-// gsap.set("#left-eye",{display:"none"});
 
 export let moonZoomInTL = gsap.timeline();
 moonZoomInTL.fromTo("#moon",{alpha:0, scale:0.25},{alpha:1, duration:4, scale:14, y:"+=1200", x:"+=300",ease:"none"});
-            // .from(".moon-things",{alpha:0});
 
 
-// gsap.set(".moon-things",{display:"block"});
+
 gsap.set(".moon-things",{transformOrigin:"center"});
 gsap.set("#right-arm",{transformOrigin:"bottom left"});
 gsap.set("#left-arm",{transformOrigin:"top right"});
@@ -32,27 +28,3 @@ moonManTL.fromTo("#left-eye",{opacity:0, scale:0},{display: "block", opacity: 1,
         .to("#moon-tongue",{scaleX:1.25, scaleY:0.75, duration:0.175, repeat: -1, yoyo:true}, "-=2.5")
         .to("#cape",{scaleX:1.25, scaleY:0.75, duration:1, repeat: -1, yoyo:true})
         .to("#moon",{duration:4, ease: "back.inOut(4)", y:"-=600", x:"+=600", scale:0}, "-=0.5");
-
-
-
-            // .to(".moon-things",{display: "block", alpha:1, duration:3});
-
-        // .to(".eyes", { display: "block", opacity: 1 });
-
-
-// If the elem has display: none and opacity: 0
-// gsap.to(".hiddenElem", { display: "block", opacity: 1 });
-
-// If the elem has display: none and opacity: 1
-// gsap.fromTo(".hiddenElem", { opacity: 0 }, { display: "block", opacity: 1 });
-
-
-        // .from("#left-eye",{alpha:1, duration:1, scale:2});
-        // .from("#left-eye",{alpha:1, duration:1, scale:2});
-        // .fromTo("#moon-things",{alpha:0},{alpha:1, duration:2});
-
-
-    // .to(".moon-things",{duration:2, alpha:1,}, "-=1");
-    //   .from(".moon-things",{alpha:0})
-    //     .to(".eyes",{duration:2, alpha:1});
-        // .to("#right-eye",{duration:2, alpha:1}, "eyes");
